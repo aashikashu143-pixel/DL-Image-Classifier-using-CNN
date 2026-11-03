@@ -148,22 +148,22 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: SARAVANAN K')
-    print('Register Number:212225040387')
+    print('Name: AASHIK.A')
+    print('Register Number:212225040005')
     print(f'Test Accuracy: {accuracy:.4f}')
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name: SARAVANAN K')
-    print('Register Number:212225040387')
+    print('Name: AASHIK.A')
+    print('Register Number:212225040005')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.title('Confusion Matrix')
     plt.show()
     # Print classification report
-    print('Name: SARAVANAN K')
-    print('Register Number:212225040387')
+    print('Name: AASHIK.A')
+    print('Register Number:212225040005')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=[str(i) for i in range(10)]))
 
@@ -184,8 +184,8 @@ def predict_image(model, image_index, dataset):
 
     class_names = [str(i) for i in range(10)]
 
-    print('Name: SARAVANAN K')
-    print('Register Number:212225040387')
+    print('Name: AASHIK.A')
+    print('Register Number:212225040005')
     plt.imshow(image.cpu().squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
